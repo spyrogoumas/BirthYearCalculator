@@ -1,0 +1,29 @@
+import java.util.Scanner; 
+/**
+ *
+ * @author Administrator
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner console = new Scanner(System.in); 
+    System.out.print("Please enter a birth year:  "); 
+    String birthdaydate= console.nextLine(); 
+    
+    String century = birthdaydate.substring(0,2); 
+    int newestCentury = Integer.parseInt(century)+1;     
+    String decade = birthdaydate.substring(2,3)+0; 
+    int newestDecade = Integer.parseInt(decade); 
+    
+    
+    
+    System.out.printf("Birth Year: %s\n", birthdaydate);
+    System.out.printf("Century: %s\n", newestCentury);
+    System.out.printf("Decade: %s\n", newestDecade);
+    
+     }
+    
+}
